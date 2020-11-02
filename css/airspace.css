@@ -4,7 +4,7 @@
 --*/
 #searchForm {
   position:absolute;
-  left:375px;
+  left:30%;
   bottom:1px;
   z-index:2;
   width: 200px;
