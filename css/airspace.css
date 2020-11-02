@@ -160,24 +160,24 @@ header .navbar {
 header .navbar-brand {
   padding-top: 0px;
 }
-header .navbar-default {
+header .navbar-light {
   background: white;
   border: 0px;
 }
-#firstHeader.small .navbar-default {
+#firstHeader.small .navbar-light {
      -moz-box-shadow: 0 1px 20px 0 rgba(46,61,73,.2);
      -webkit-box-shadow: 0 1px 20px 0 rgba(46,61,73,.2);
      box-shadow: 0 1px 20px 0 rgba(46,61,73,.2);   
 }
-header .navbar-default .navbar-nav {
+header .navbar-light .navbar-nav {
   padding-top: 0px;
 }
-header .navbar-default .navbar-nav li a {
+header .navbar-light .navbar-nav li a {
   color: #333333;
   padding: 10px 20px;
   font-size: 15px;
 }
-font header .navbar-default .navbar-nav li a:hover {
+font header .navbar-light .navbar-nav li a:hover {
   color: #000;
 
 }
@@ -1247,16 +1247,16 @@ px      68    160    252    344    436    528    620    712    */
     border: 0px;
     min-height: 40px;
   }
-  footer .navbar-default {
+  footer .navbar-light {
     border: 0px;
     width: 68%;
   }
-  footer .navbar-default .navbar-nav li a {
+  footer .navbar-light .navbar-nav li a {
     color: #494949;
     padding: 10px 10px;
     font-size: 100px;
   }
-  footer .navbar-default .navbar-nav li a:hover {
+  footer .navbar-light .navbar-nav li a:hover {
     color: #000;
   }
 
@@ -1356,7 +1356,7 @@ px      68    160    252    344    436    528    620    712    */
     padding: 0 0 0 0;
     margin: 0 0 0 0;
   }
-  header .navbar-default{
+  header .navbar-light{
     background-color: #332f41;
   }
 
@@ -1381,16 +1381,16 @@ px      68    160    252    344    436    528    620    712    */
 }
 
 
-  header .navbar-default .navbar-toggle {
+  header .navbar-light .navbar-toggle {
     margin-top: 20px;
   }
-header .navbar-default .navbar-nav li a {
+header .navbar-light .navbar-nav li a {
   color: #ffffff;
 }
-header .navbar-default .navbar-nav li a:hover {
+header .navbar-light .navbar-nav li a:hover {
   color: #ffffff;
 }
-header .navbar-default .navbar-nav li ul li a{
+header .navbar-light .navbar-nav li ul li a{
   color: #ffffff;
 }
 header.large li{ margin-top: 0px; }
@@ -1474,7 +1474,7 @@ px      68    160    252    */
     padding: 0 0 0 0;
     margin: 0 0 0 0;
   }
-  header .navbar-default{
+  header .navbar-light{
     background-color: #332f41;
   }
 
@@ -1499,16 +1499,16 @@ px      68    160    252    */
 }
 
 
-  header .navbar-default .navbar-toggle {
+  header .navbar-light .navbar-toggle {
     margin-top: 20px;
   }
-header .navbar-default .navbar-nav li a {
+header .navbar-light .navbar-nav li a {
   color: #ffffff;
 }
-header .navbar-default .navbar-nav li a:hover {
+header .navbar-light .navbar-nav li a:hover {
   color: #ffffff;
 }
-header .navbar-default .navbar-nav li ul li a{
+header .navbar-light .navbar-nav li ul li a{
   color: #ffffff;
 }
 #mobile-ssk{
