@@ -104,7 +104,6 @@
                                     <svg id="closebutton"height="0px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"/></svg>
                                 </a>
                                  <a id="searchLink"><span class="ion-android-search customFontSize3" ></a>
-
                             </div>
                             <ul class="nav navbar-nav navbar-right abc" id="menuBar">
                                 <li><a href="{{ site.baseurl }}/about-us">About</a></li>
@@ -161,17 +160,26 @@
                     </div>
                 </nav> -->
                 <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
-                    <a href="/" class="navbar-brand">
-                        <img src="/assets/logo.png" alt="Logo">
-                    </a>
+                    <div id="navh" class="logo1">
+                        <a href="{{ site.baseurl }}/">{% include logo.svg %}</a>
+                    </div>
+                    <div id="navh2" >
+                        <a class="navbar-brand" href="{{ site.baseurl }}/">
+                            <img src="{{ site.baseurl }}/assets/logoOpt.png" alt="Logo">
+                        </a>
+                    </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="navbar-collapse collapse show" id="navbarCollapse" style="">
-                      <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
+                      <ul class="navbar-nav ml-auto">
+                        <div id="searchForm">
+                            <input type="text" id="SearchBar" onchange="searchLoad()">
+                            <a onclick="condenser()" id="closebtn" style="visibility:hidden;height:0px;padding-right:5px;width:0px;position:relative;">
+                                <svg id="closebutton"height="0px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"/></svg>
+                            </a>
+                             <a id="searchLink"><span class="ion-android-search customFontSize3" ></a>
+                        </div>
                         <li class="nav-item active">
                             <a href="{{ site.baseurl }}/about-us" class="nav-link">About</a>
                         </li>
@@ -201,6 +209,25 @@
                         </li>
                         <li class="nav-item active">
                             <a href="https://help.sugarlabs.org/" class="nav-link">Use</a>
+                        </li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Join Us<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://wiki.sugarlabs.org/go/Mailing_Lists" >Community Mailing Lists</a></li>
+                                <li><a href="https://github.com/sugarlabs/sugar-docs/blob/master/README.md/" >Developer's Guide</a></li>
+                                <li><a href="https://wiki.sugarlabs.org/go/Local_Labs" >Start a local lab</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-header"></li>
+                                <li><a href="http://translate.sugarlabs.org" >Contribute to Translation</a></li>
+                                <li><a href="https://github.com/sugarlabs/sugar-docs/blob/master/README.md" >Contribute to Software</a></li>
+                                <li><a href="https://wiki.sugarlabs.org/go/Sugar_Labs/Getting_Involved" >Contribute to Central Organisation</a></li>
+                                <li><a href="https://wiki.sugarlabs.org/go/Category:Project" >Related Projects</a></li>
+                                <li><a href="{{ site.baseurl }}/profiles">Contributors</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://planet.sugarlabs.org" >Blog Archive</a></li>
+                            </ul>
                         </li>
                       </ul>
                     </div>
