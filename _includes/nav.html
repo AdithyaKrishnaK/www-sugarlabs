@@ -160,9 +160,19 @@
                     </div>
                 </nav> -->
                 <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
-                   <!--  <div id="navh" class="logo1">
+                   <div>
+                    <div id="navh" class="logo1">
                         <a href="{{ site.baseurl }}/">{% include logo.svg %}</a>
-                    </div> -->
+                    </div> 
+                    <div id="navh2" >
+                        <a class="navbar-brand" href="{{ site.baseurl }}/">
+                            <img src="{{ site.baseurl }}/assets/logoOpt.png" alt="Logo">
+                        </a>
+                    </div>
+                   </div>
+                    <div id="navh" class="logo1">
+                        <a href="{{ site.baseurl }}/">{% include logo.svg %}</a>
+                    </div> 
                     <div id="navh2" >
                         <a class="navbar-brand" href="{{ site.baseurl }}/">
                             <img src="{{ site.baseurl }}/assets/logoOpt.png" alt="Logo">
@@ -171,7 +181,7 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="navbar-collapse collapse show" id="navbarCollapse" style="">
+                    <div class="navbar-collapse collapse show" id="navbarCollapse" >
                       <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
                             <a href="{{ site.baseurl }}/about-us" class="nav-link">About</a>

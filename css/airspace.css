@@ -172,6 +172,9 @@ header .navbar-light {
 header .navbar-light .navbar-nav {
   padding-top: 0px;
 }
+header .navbar-light .navbar-nav .nav-item a{
+  padding: 10px 20px;
+}
 header .navbar-light .navbar-nav li a {
   color: #333333;
   padding: 10px 20px;
