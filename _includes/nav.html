@@ -111,18 +111,18 @@
                                 <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Get Sugar<span class="caret"></span></a>
                                     <ul class="dropdown-menu">
                                         <li ><a href="https://wiki.sugarlabs.org/go/Sugar_on_a_Stick/Installation">SOAS</a></li>
-                                        <li role="separator" class="divider"></li>
+                                        <li role="separator" class="dropdown-divider"></li>
                                         <li class="dropdown-header"></li>
                                         <li ><a href="https://github.com/sugarlabs/sugar/blob/master/docs/fedora.md" >On Fedora</a></li>
                                         <li ><a href="https://github.com/sugarlabs/sugar/blob/master/docs/debian.md" >On Debian</a></li>
                                         <li ><a href="https://github.com/sugarlabs/sugar/blob/master/docs/ubuntu.md" >On Ubuntu</a></li>
                                         <li ><a href="https://wiki.sugarlabs.org/go/Downloads#Do_you_use_GNU.2FLinux.3F" >On Other Distros</a></li>
-                                        <li role="separator" class="divider"></li>
+                                        <li role="separator" class="dropdown-divider"></li>
                                         <li class="dropdown-header"></li>
                                         <li><a href="http://server.sugarizer.org/" >Sugarizer Online</a></li>
                                         <li><a href="http://sugarizer.org/" >On App</a></li>
                                         <li><a href="https://github.com/llaske/sugarizer#server" >Set up server</a></li>
-                                        <li role="separator" class="divider"></li>
+                                        <li role="separator" class="dropdown-divider"></li>
                                         <li class="dropdown-header"></li>
                                         <li><a href="http://wiki.laptop.org/go/Release_notes" >On XO</a></li>
                                         <li><a href="{{ site.baseurl }}/sugar-for-raspberry-pi" >On Raspberry Pi</a></li>
@@ -141,7 +141,7 @@
                                         <li><a href="https://wiki.sugarlabs.org/go/Mailing_Lists" >Community Mailing Lists</a></li>
                                         <li><a href="https://github.com/sugarlabs/sugar-docs/blob/master/README.md/" >Developer's Guide</a></li>
                                         <li><a href="https://wiki.sugarlabs.org/go/Local_Labs" >Start a local lab</a></li>
-                                        <li role="separator" class="divider"></li>
+                                        <li role="separator" class="dropdown-divider"></li>
                                         <li class="dropdown-header"></li>
                                         <li><a href="http://translate.sugarlabs.org" >Contribute to Translation</a></li>
                                         <li><a href="https://github.com/sugarlabs/sugar-docs/blob/master/README.md" >Contribute to Software</a></li>
@@ -173,13 +173,6 @@
                     </button>
                     <div class="navbar-collapse collapse show" id="navbarCollapse" style="">
                       <ul class="navbar-nav ml-auto">
-                        <div id="searchForm">
-                            <input type="text" id="SearchBar" onchange="searchLoad()">
-                            <a onclick="condenser()" id="closebtn" style="visibility:hidden;height:0px;padding-right:5px;width:0px;position:relative;">
-                                <svg id="closebutton"height="0px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"/></svg>
-                            </a>
-                             <a id="searchLink"><span class="ion-android-search customFontSize3" ></a>
-                        </div>
                         <li class="nav-item active">
                             <a href="{{ site.baseurl }}/about-us" class="nav-link">About</a>
                         </li>
@@ -187,24 +180,24 @@
                             <a href="http://server.sugarizer.org" class="nav-link">Try Now</a>
                         </li>
                         <li class="nav-item dropdown show">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Get Sugar<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Get Sugar<span class="caret"></span></a>
+                            <ul class="dropdown-menu show">
                                 <li ><a href="https://wiki.sugarlabs.org/go/Sugar_on_a_Stick/Installation">SOAS</a></li>
-                                <li role="separator" class="divider"></li>
+                                <li role="separator" class="dropdown-divider"></li>
                                 <li class="dropdown-header"></li>
-                                <li ><a href="https://github.com/sugarlabs/sugar/blob/master/docs/fedora.md" >On Fedora</a></li>
-                                <li ><a href="https://github.com/sugarlabs/sugar/blob/master/docs/debian.md" >On Debian</a></li>
-                                <li ><a href="https://github.com/sugarlabs/sugar/blob/master/docs/ubuntu.md" >On Ubuntu</a></li>
-                                <li ><a href="https://wiki.sugarlabs.org/go/Downloads#Do_you_use_GNU.2FLinux.3F" >On Other Distros</a></li>
-                                <li role="separator" class="divider"></li>
+                                <li ><a class="dropdown-item" href="https://github.com/sugarlabs/sugar/blob/master/docs/fedora.md" >On Fedora</a></li>
+                                <li ><a class="dropdown-item" href="https://github.com/sugarlabs/sugar/blob/master/docs/debian.md" >On Debian</a></li>
+                                <li ><a class="dropdown-item" href="https://github.com/sugarlabs/sugar/blob/master/docs/ubuntu.md" >On Ubuntu</a></li>
+                                <li ><a class="dropdown-item" href="https://wiki.sugarlabs.org/go/Downloads#Do_you_use_GNU.2FLinux.3F" >On Other Distros</a></li>
+                                <li role="separator" class="dropdown-divider"></li>
                                 <li class="dropdown-header"></li>
-                                <li><a href="http://server.sugarizer.org/" >Sugarizer Online</a></li>
-                                <li><a href="http://sugarizer.org/" >On App</a></li>
-                                <li><a href="https://github.com/llaske/sugarizer#server" >Set up server</a></li>
-                                <li role="separator" class="divider"></li>
+                                <li><a class="dropdown-item" href="http://server.sugarizer.org/" >Sugarizer Online</a></li>
+                                <li><a class="dropdown-item" href="http://sugarizer.org/" >On App</a></li>
+                                <li><a class="dropdown-item" href="https://github.com/llaske/sugarizer#server" >Set up server</a></li>
+                                <li role="separator" class="dropdown-divider"></li>
                                 <li class="dropdown-header"></li>
-                                <li><a href="http://wiki.laptop.org/go/Release_notes" >On XO</a></li>
-                                <li><a href="{{ site.baseurl }}/sugar-for-raspberry-pi" >On Raspberry Pi</a></li>
+                                <li><a class="dropdown-item" href="http://wiki.laptop.org/go/Release_notes" >On XO</a></li>
+                                <li><a class="dropdown-item" href="{{ site.baseurl }}/sugar-for-raspberry-pi" >On Raspberry Pi</a></li>
                             </ul>
                         </li>
                         <li class="nav-item active">
@@ -215,7 +208,7 @@
                                 <li><a href="https://wiki.sugarlabs.org/go/Mailing_Lists" >Community Mailing Lists</a></li>
                                 <li><a href="https://github.com/sugarlabs/sugar-docs/blob/master/README.md/" >Developer's Guide</a></li>
                                 <li><a href="https://wiki.sugarlabs.org/go/Local_Labs" >Start a local lab</a></li>
-                                <li role="separator" class="divider"></li>
+                                <li role="separator" class="dropdown-divider"></li>
                                 <li class="dropdown-header"></li>
                                 <li><a href="http://translate.sugarlabs.org" >Contribute to Translation</a></li>
                                 <li><a href="https://github.com/sugarlabs/sugar-docs/blob/master/README.md" >Contribute to Software</a></li>
