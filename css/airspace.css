@@ -2,6 +2,9 @@
 /*--
   Common Css
 --*/
+.row {
+  justify-content: center;
+}
 #searchForm {
   position:absolute;
   left:30%;
